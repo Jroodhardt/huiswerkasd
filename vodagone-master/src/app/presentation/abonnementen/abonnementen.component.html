@@ -1,0 +1,38 @@
+<div class="abonnementen flex-container"
+     fxLayout="column">
+  <mat-nav-list class="flex-item" fxFlex="100%">
+    <mat-list-item
+      *ngFor="let abonnement of abonnementen.abonnementen">
+      <button mat-button
+              matTooltip="{{abonnement.dienst}}"
+              (click)="onAbonnementSelected(abonnement)"
+              [class.selected]="abonnement.id === selectedAbonnementId">
+        <mat-icon
+          color="accent"
+          *ngIf="abonnement.aanbieder === aanbieder.VODAFONE"
+          matListIcon>
+          phone_android
+        </mat-icon>
+        <mat-icon
+          color="primary"
+          *ngIf="abonnement.aanbieder === aanbieder.ZIGGO"
+          matListIcon>
+          tv
+        </mat-icon>
+        {{ abonnement.dienst }}
+      </button>
+    </mat-list-item>
+  </mat-nav-list>
+  <button mat-raised-button
+          color="accent"
+          (click)="onNewAbonnementRequested()">
+    Abonnement aanvragen
+  </button>
+
+  <div class="flex-item totaalBedrag mat-body-1">
+    Totaalbedrag: {{ abonnementen.totalPrice | currency:'EUR' }}
+  </div>
+</div>
+
+
+

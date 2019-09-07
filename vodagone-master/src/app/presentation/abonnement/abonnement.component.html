@@ -1,0 +1,33 @@
+<div class="details"
+     *ngIf="abonnement">
+
+  <div class="buttons">
+    <button mat-mini-fab
+            (click)="onUpgrade()"
+            [disabled]="abonnement.verdubbeling !== abonnementVerdubbeling.STANDAARD"
+            matTooltip="Upgrade this Service">
+      <mat-icon>add_circle</mat-icon>
+    </button>
+    <button mat-mini-fab
+            (click)="onShare()"
+            [disabled]="!abonnement.deelbaar"
+            matTooltip="Share this Service">
+      <mat-icon>share</mat-icon>
+    </button>
+    <button mat-mini-fab
+            color="warn"
+            [disabled]="abonnement.status == abonnementStatus.OPGEZEGD"
+            (click)="onTerminate()"
+            matTooltip="Terminate subscription">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </div>
+  <div class="content">
+    <div class="mat-display-1">
+      {{ abonnement.dienst }}
+    </div>
+    <div class="mat-subheading-2">
+      {{ abonnement.prijs }}
+    </div>
+  </div>
+</div>

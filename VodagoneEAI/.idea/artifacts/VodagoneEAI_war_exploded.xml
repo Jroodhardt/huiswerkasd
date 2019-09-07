@@ -1,0 +1,65 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="VodagoneEAI:war exploded">
+    <output-path>$PROJECT_DIR$/target/VodagoneEAI-1.0-SNAPSHOT</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="VodagoneEAI" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.glassfish:javax.json:1.0.4" />
+          <element id="library" level="project" name="Maven: junit:junit:4.12" />
+          <element id="library" level="project" name="Maven: org.hamcrest:hamcrest-core:1.3" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.46" />
+          <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
+          <element id="library" level="project" name="Maven: org.json:json:20170516" />
+          <element id="library" level="project" name="Maven: javax.inject:javax.inject:1" />
+          <element id="library" level="project" name="Maven: org.force66:BeanTester:1.0.0" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.3.2" />
+          <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils:1.9.2" />
+          <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.1.1" />
+          <element id="library" level="project" name="Maven: commons-collections:commons-collections:3.2.1" />
+          <element id="library" level="project" name="Maven: c3p0:c3p0:0.9.1.2" />
+          <element id="library" level="project" name="Maven: com.airhacks:jaxrs-cors:0.0.2" />
+          <element id="library" level="project" name="Maven: org.apache.maven.plugins:maven-compiler-plugin:3.6.1" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-plugin-api:3.0" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-model:3.0" />
+          <element id="library" level="project" name="Maven: org.sonatype.sisu:sisu-inject-plexus:1.4.2" />
+          <element id="library" level="project" name="Maven: org.sonatype.sisu:sisu-inject-bean:1.4.2" />
+          <element id="library" level="project" name="Maven: org.sonatype.sisu:sisu-guice:noaop:2.1.7" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-artifact:3.0" />
+          <element id="library" level="project" name="Maven: org.codehaus.plexus:plexus-utils:2.0.4" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-core:3.0" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-settings:3.0" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-settings-builder:3.0" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-repository-metadata:3.0" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-model-builder:3.0" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-aether-provider:3.0" />
+          <element id="library" level="project" name="Maven: org.sonatype.aether:aether-impl:1.7" />
+          <element id="library" level="project" name="Maven: org.sonatype.aether:aether-spi:1.7" />
+          <element id="library" level="project" name="Maven: org.sonatype.aether:aether-api:1.7" />
+          <element id="library" level="project" name="Maven: org.sonatype.aether:aether-util:1.7" />
+          <element id="library" level="project" name="Maven: org.codehaus.plexus:plexus-interpolation:1.14" />
+          <element id="library" level="project" name="Maven: org.codehaus.plexus:plexus-classworlds:2.2.3" />
+          <element id="library" level="project" name="Maven: org.codehaus.plexus:plexus-component-annotations:1.5.5" />
+          <element id="library" level="project" name="Maven: org.sonatype.plexus:plexus-sec-dispatcher:1.3" />
+          <element id="library" level="project" name="Maven: org.sonatype.plexus:plexus-cipher:1.4" />
+          <element id="library" level="project" name="Maven: org.apache.maven.shared:maven-shared-utils:3.1.0" />
+          <element id="library" level="project" name="Maven: commons-io:commons-io:2.5" />
+          <element id="library" level="project" name="Maven: org.apache.maven.shared:maven-shared-incremental:1.1" />
+          <element id="library" level="project" name="Maven: org.ow2.asm:asm:6.0_ALPHA" />
+          <element id="library" level="project" name="Maven: com.thoughtworks.qdox:qdox:2.0-M5" />
+          <element id="library" level="project" name="Maven: org.codehaus.plexus:plexus-compiler-api:2.8.1" />
+          <element id="library" level="project" name="Maven: org.codehaus.plexus:plexus-compiler-manager:2.8.1" />
+          <element id="library" level="project" name="Maven: org.codehaus.plexus:plexus-compiler-javac:2.8.1" />
+          <element id="library" level="project" name="Maven: com.sun.mail:javax.mail:1.5.5" />
+          <element id="library" level="project" name="Maven: javax.activation:activation:1.1" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/VodagoneEAI-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="VodagoneEAI/web/Web" />
+    </root>
+  </artifact>
+</component>

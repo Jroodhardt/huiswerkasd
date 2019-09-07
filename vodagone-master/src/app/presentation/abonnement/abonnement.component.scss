@@ -1,0 +1,23 @@
+.details {
+  padding: 24px;
+  color: lightgrey;
+
+  .buttons {
+    text-align: right;
+    margin-bottom: 36px;
+
+    button {
+      margin: 0 4px
+    }
+  }
+
+  .content {
+    text-align: center;
+
+    .mat-display-1 {
+      margin-bottom: 8px;
+    }
+  }
+
+}
+

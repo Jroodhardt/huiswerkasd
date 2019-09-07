@@ -1,0 +1,33 @@
+<h1 mat-dialog-title>
+  Selecteer een gebruiker
+</h1>
+
+<mat-dialog-content>
+  <mat-nav-list>
+    <mat-list-item
+      *ngFor="let abonee of abonnees">
+      <button mat-button
+              matTooltip="{{abonee.name}}"
+              (click)="onAbonneeSelected(abonee)">
+        <mat-icon
+          *ngIf="abonee !== selectedAbonnee"
+          matListIcon>
+          account_box
+        </mat-icon>
+        <mat-icon
+          color="accent"
+          *ngIf="abonee === selectedAbonnee"
+          matListIcon>
+          account_box
+        </mat-icon>
+        {{ abonee.name }} ({{ abonee.email }})
+      </button>
+    </mat-list-item>
+  </mat-nav-list>
+
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button color="primary" [disabled]="!selectedAbonnee" (click)="onOk()"> Ok</button>
+  <button mat-button color="primary" mat-dialog-close> Cancel</button>
+</mat-dialog-actions>

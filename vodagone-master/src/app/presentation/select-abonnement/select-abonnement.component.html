@@ -1,0 +1,48 @@
+<h1 mat-dialog-title>
+  Selecteer een Abonnement
+</h1>
+
+<mat-dialog-content>
+  <div class="filter">
+    <mat-form-field floatPlaceholder="never">
+      <input matInput #filter placeholder="Filter Abonnementen">
+    </mat-form-field>
+  </div>
+
+  <mat-nav-list>
+    <mat-list-item
+      *ngFor="let abonnement of abonnementen">
+      <button mat-button
+              (click)="onAbonnementSelected(abonnement)">
+        <mat-icon
+          *ngIf="abonnement !== selectedAbonnement && abonnement.aanbieder === aanbieder.VODAFONE"
+          matListIcon>
+          phone_android
+        </mat-icon>
+        <mat-icon
+          color="accent"
+          *ngIf="abonnement === selectedAbonnement && abonnement.aanbieder === aanbieder.VODAFONE"
+          matListIcon>
+          phone_android
+        </mat-icon>
+        <mat-icon
+          *ngIf="abonnement !== selectedAbonnement && abonnement.aanbieder === aanbieder.ZIGGO"
+          matListIcon>
+          tv
+        </mat-icon>
+        <mat-icon
+          color="accent"
+          *ngIf="abonnement === selectedAbonnement && abonnement.aanbieder === aanbieder.ZIGGO"
+          matListIcon>
+          tv
+        </mat-icon>
+        {{ abonnement.aanbieder }} ({{ abonnement.dienst }})
+      </button>
+    </mat-list-item>
+  </mat-nav-list>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button color="primary" [disabled]="!selectedAbonnement" (click)="onOk()"> Ok</button>
+  <button mat-button color="primary" mat-dialog-close> Cancel</button>
+</mat-dialog-actions>
